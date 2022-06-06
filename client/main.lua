@@ -79,7 +79,7 @@ local function GetDeliveryLocation()
     PolyZone:onPlayerInOut(function(isPointInside)
         if isPointInside then
             inRange = true
-            exports["qb-core"]:DrawText(Lang:t('info.busstop_text'), 'rgb(220, 20, 60)')
+            exports["qb-core"]:DrawText(Lang:t('info.busstop_text'), 'rgb(34, 109, 245)')
             CreateThread(function()
                 repeat
                     Wait(0)
@@ -202,7 +202,7 @@ RegisterNetEvent('qb-busjob:client:DoBusNpc', function()
             PolyZone:onPlayerInOut(function(isPointInside)
                 if isPointInside then
                     inRange = true
-                    exports["qb-core"]:DrawText(Lang:t('info.busstop_text'), 'rgb(220, 20, 60)')
+                    exports["qb-core"]:DrawText(Lang:t('info.busstop_text'), 'rgb(34, 109, 245)')
                     CreateThread(function()
                         repeat
                             Wait(0)
